@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+      var quantity = 15;
+  
+      for (var i = 1; i <= quantity; i++) {
+        document.write('<div class="firefly"></div>');
+      }
+    </script>
+</head>
+<body>  
+  <div class="fireflies-container">
+    <div class="container">
+      <h2>MY TO DO LIST</h2>
+        <div class="inputf">
+          <input type="text" placeholder="Add your works...">
+          <button><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="todoList">
+          <!-- li from localstorage -->
+        </ul>
+        <div class="footer">
+          <p>You have <span class="pendingTasks"></span> pending tasks</span></p>
+          <button><strong>DELETE</strong></button>
+        </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
